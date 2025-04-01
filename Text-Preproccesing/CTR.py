@@ -16,7 +16,7 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 
 # Define file path
-file_path = "C:/Users/ASUS/Downloads/Gửi Huy.xlsx"
+file_path = (YOUR FILE HERE)
 
 # Read the Excel file
 df = pd.read_excel(file_path, sheet_name=1)
@@ -108,7 +108,7 @@ filtered_df = df_grouped[(df_grouped['Searched Count'] >= MIN_SEARCH_VOLUME) & (
 filtered_df.to_csv("filtered_data_1.csv", index=False)
 
 # Save filtered data to the existing Excel file
-existing_file_path = 'C:/Users/ASUS/Downloads/Gửi Huy.xlsx'
+existing_file_path = (YOUR FILE HERE)
 book = openpyxl.load_workbook(existing_file_path)
 new_sheet_name = 'NewFilteredData(Test)'
 sheet = book.create_sheet(title=new_sheet_name)
