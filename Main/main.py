@@ -13,7 +13,7 @@ from feature_extraction.word_embeddings import WordEmbeddings
 
 def main():
     # File path
-    file_path = "C:/Users/ASUS/Downloads/Gửi Huy.xlsx"
+    file_path = (YOUR FILE HERE)
 
     # 1. Load and preprocess data
     df = load_data(file_path)
